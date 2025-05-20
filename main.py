@@ -60,7 +60,7 @@ planner_prompt = ChatPromptTemplate.from_messages(
     ]
 )
 planner = planner_prompt | ChatOpenAI(
-    model="gpt-4o", temperature=0
+    model="gpt-o4", temperature=0
 ).with_structured_output(Plan)
 
 class Response(BaseModel):
